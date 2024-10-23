@@ -42,15 +42,15 @@ export const avSlice = createSlice({
   reducers: {
     incrementAvQuantity: (state, action) => {
         const item = state[action.payload];
-    if (item) {
-        item.quantity++;
+        if (item) {
+            item.quantity++;
     }
     },
     decrementAvQuantity: (state, action) => {
         const item = state[action.payload];
-    if (item && item.quantity > 0) {
-        item.quantity--;
-    }
+        if (item && item.quantity > 0) {
+            item.quantity--;
+        }
      
     },
   },
